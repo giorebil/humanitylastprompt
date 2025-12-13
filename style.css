@@ -1,55 +1,110 @@
+/* HUMAN-FRIENDLY DOOMER THEME */
+
 body {
-    background-color: #0a0a0a; /* Void Black */
-    color: #e0e0e0; /* Off-white */
-    font-family: 'Courier New', Courier, monospace; /* Terminal vibe */
-    line-height: 1.6;
+    /* Change from Pitch Black to Deep Charcoal (reduces eye strain) */
+    background-color: #121212; 
+    
+    /* Change from White to Silver/Light Grey */
+    color: #c0c0c0; 
+    
+    /* Better font stack: Menlo/Consolas are thicker and easier to read than Courier */
+    font-family: 'Menlo', 'Consolas', 'Monaco', 'Courier New', monospace; 
+    
+    /* Increase spacing to let the text breathe */
+    line-height: 1.8; 
+    font-size: 18px; /* Slightly larger text */
+    
     margin: 0;
     padding: 0;
+    -webkit-font-smoothing: antialiased; /* Makes text crisper */
 }
 
 .container {
-    max-width: 800px;
+    /* Narrower width (700px) makes reading faster */
+    max-width: 700px; 
     margin: 0 auto;
-    padding: 40px 20px;
+    padding: 60px 20px;
 }
 
+/* HEADERS */
 h1, h2, h3, h4 {
-    color: #ffffff;
+    color: #ffffff; /* Headers stay bright white for contrast */
     border-bottom: 1px solid #333;
-    padding-bottom: 10px;
-    margin-top: 40px;
+    padding-bottom: 15px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    letter-spacing: -0.5px;
 }
 
-a {
-    color: #ff4444; /* Alert Red */
-    text-decoration: none;
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    border-bottom: none; /* Clean look for main title */
 }
 
-blockquote {
-    border-left: 4px solid #ff4444;
-    margin: 0;
+/* EMPHASIS (Bold text) */
+strong {
+    color: #ffffff; /* Make bold text pop in white */
+    font-weight: 700;
+}
+
+/* LISTS (The Axioms) */
+ul {
     padding-left: 20px;
-    color: #aaa;
-    font-style: italic;
 }
 
-/* MathJax equation styling */
+li {
+    margin-bottom: 15px; /* Adds space between bullet points */
+}
+
+/* THE MATH (LaTeX) */
 mjx-container {
-    font-size: 110% !important;
-    padding: 10px 0;
+    font-size: 115% !important;
+    padding: 15px 0;
+    opacity: 0.9;
 }
 
+/* ANALOGY BLOCKS (Italic parts) */
+em {
+    color: #999; /* Dim the analogies slightly to separate them from logic */
+    display: block; /* Give them their own line if possible, or just style inline */
+    margin-top: 5px;
+}
+
+/* LINKS */
+a {
+    color: #ff5555; /* Softer Red */
+    text-decoration: none;
+    border-bottom: 1px dotted #ff5555;
+    transition: all 0.2s ease;
+}
+
+a:hover {
+    background-color: #ff5555;
+    color: #121212;
+}
+
+/* LOADING SCREEN */
 .loading {
     text-align: center;
-    padding-top: 20vh;
+    padding-top: 30vh;
     font-size: 1.2rem;
     color: #666;
+    animation: pulse 2s infinite;
 }
 
-/* Responsive */
+@keyframes pulse {
+    0% { opacity: 0.5; }
+    50% { opacity: 1; }
+    100% { opacity: 0.5; }
+}
+
+/* RESPONSIVE MOBILE */
 @media (max-width: 600px) {
     .container {
-        padding: 20px;
+        padding: 30px 20px;
+    }
+    body {
+        font-size: 16px;
     }
 }
-

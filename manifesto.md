@@ -1,4 +1,4 @@
-### Giovanni Liber's Theory of Singularity's Agency
+### Liber's Limit Theory
 
 **Objective:** Demonstration that due to physical, thermodynamic, and informational asymmetries, the probability of human control over a recursive superintelligence approaches zero over time.
 
