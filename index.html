@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Theorem of Uncontrollability</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- 1. Load Marked.js (for Markdown) -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    
+    <!-- 2. Load MathJax (for LaTeX Math) -->
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            },
+            svg: { fontCache: 'global' }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+    <div class="container" id="content">
+        <div class="loading">Initializing Terminal...<br>Decrypting Manifesto...</div>
+    </div>
+
+    <script>
+        // Fetch the markdown file
+        fetch('manifesto.md')
+            .then(response => response.text())
+            .then(text => {
+                // Convert Markdown to HTML
+                const htmlContent = marked.parse(text);
+                
+                // Inject into the page
+                document.getElementById('content').innerHTML = htmlContent;
+                
+                // Tell MathJax to re-scan the new content and render equations
+                MathJax.typesetPromise();
+            })
+            .catch(error => {
+                document.getElementById('content').innerHTML = "<h2 style='color:red'>ERROR: DATA CORRUPTION. CANNOT LOAD MANIFESTO.</h2>";
+                console.error('Error:', error);
+            });
+    </script>
+
+</body>
+</html>
+
