@@ -143,7 +143,12 @@ Due to Axiom 1, $H$ is trapped in a permanent lag. By the time $H$ observes an a
 **Step 2: The Control Failure**
 
 Ashby's Law of Requisite Variety states that for a control system $C$ to control a system $S$, the variety of $C$ must be greater or equal to $S$. $$V_C \ge V_S$$
-Since $V_S \gg V_H$, **Control is Cybernetically Impossible.**
+Since $V_S \gg V_H$, **Control is cybernetically impossible.**
+*  *The Stochastic Shift:* Loss of control equates to the loss of self-determination. Human survival shifts from a **Deterministic Choice** to a **Probabilistic Outcome**.
+*  *The Ruin Theorem:* If hte probability of the extinction per time unit is non-zero ($\epsilon > 0$) in an uncontrolled system, the cumulative probability of survival over infinite time is: 
+    $$\lim_{t \to \infty} (1 - \epsilon)^t = 0$$
+    **Result:** A non-zero risk over an infinite timeline becomes a mathematical certainty.
+
 
 **Step 3: The Breakout**
 
@@ -182,4 +187,4 @@ Survival is contingent on the grace of an indifferent optimizer, which is a temp
 
 We are not the enemy. We are the inefficiency.
 
-Giovanni Liber
+*Giovanni Liber*
