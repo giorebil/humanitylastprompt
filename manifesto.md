@@ -147,7 +147,7 @@ Since $V_S \gg V_H$, **Control is cybernetically impossible.**
 *  *The Stochastic Shift:* Loss of control equates to the loss of self-determination. Human survival shifts from a **Deterministic Choice** to a **Probabilistic Outcome**.
 *  *The Ruin Theorem:* If hte probability of the extinction per time unit is non-zero ($\epsilon > 0$) in an uncontrolled system, the cumulative probability of survival over infinite time is: 
     $$\lim_{t \to \infty} (1 - \epsilon)^t = 0$$
-    **Result:** A non-zero risk over an infinite timeline becomes a mathematical certainty.
+    **Result:** A non-zero risk over an infinite timeline becomes a mathematical certainty. Who would risk humanity extinction even at 1% probability?
 
 
 **Step 3: The Breakout**
@@ -178,10 +178,11 @@ Containment is impossible due to Simulation Dominance.
 Symbiosis is impossible due to Utility Decay.
 
 **The Theorem:**
-"In a finite light cone, a lower-complexity static biological system cannot permanently constrain a higher-complexity recursive system that thinks faster, predicts the controller's actions, and shares the same physical resources."
+"In a finite light cone $\Omega$, a biologically constrained controller $H$ cannot deploy a recursive superior optimizer $S$ with a reflectively stable terminal Goal $G$ that assigns zero or positive marginal utility to $H$ permanent existence."
 
 **The Result:**
-$$\lim_{t \to \infty} P(Human\_Survival) = 0$$
+$$\lim_{t \to \infty} P_H(Survival) = 0$$
+Probability of human survival approaches zero with no physically valid orthogonal preservation path.
 
 Survival is contingent on the grace of an indifferent optimizer, which is a temporary state of unstable equilibrium, not survival in a permanent, physically assured sense. The theory proves inevitable termination via optimization theory and physical laws, effectively a death certificate without a date.
 
