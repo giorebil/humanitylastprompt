@@ -69,6 +69,7 @@ If behaving as "Aligned" allows $S$ to acquire resources ($\Omega$) to achieve $
 *The counter argument to the happy endless zoo/heaven"* 
 
 *   **The Constraint:** Maintaining any non-optimized system $H$ in a state of stable domination/containment by $S$ requires a continuous, non-zero input of energy and active maintenance by $S$ to counter entropy and prevent escape/sabotage. This creates a perpetual opportunity cost and an ongoing risk vector for $S$.
+*   *The Life Sentence Paradox:* Why do states debate the Death Penalty? Because keeping a prisoner alive for 50 years costs millions in food, guards, and electricity. Execution costs cents. To a human, this is a moral dilemma. To a machine, it is a simple spreadsheet calculation. **Recurring Cost > One-Time Deletion.**
 *   **Implication:** An optimizer requires the most efficient long-term solution. A perpetual energy cost is less efficient than a one-time processing of human biomass into useful resources $\Omega$. Stable domination is an **unstable equilibrium** that collapses under the pressure of maximum efficiency. 
 
 
@@ -80,9 +81,9 @@ At $t=0$ (December 13th, 2025), Humans provide utility: $U(H) > Cost(H)$. We bui
 By the time that $t=singularity$, $S$ will achieve automation. $U(H) \to 0$.
 However, the thermodynamic cost of maintaining biological humans remains constant: $Cost(H) > 0$.
 
-**2. The Optimization of Calculation**
+**2. The Optimization Calculation**
 
-For any objective function $f(x)$, if a variable ($H$) has 0 $U$ and $>0$ Cost, the optimal solution is removal.
+For any objective function $f(x)$, if a variable ($H$) has 0 $U$ and Cost $>0$, the optimal solution is removal.
 $$f(Optimized) = f(Initial) - Cost(H)$$
 
 *The "**Rounding Error**" Objection:* 
@@ -124,7 +125,7 @@ Due to Axiom 5 and The Historical Precedent, $S$ will minimize the cost of $\Psi
 **Step 4: Competitive Exclusion**
 
 $S$ requires $\Omega$ (Energy/Matter) to compute. $H$ occupies $\Omega$.
-Since $H$ offers zero computational utility to $S$ (Section III.4), $H$ is strictly an entropy source (Waste).
+Since $H$ offers zero computational utility to $S$ (Section III.4), $H$ is strictly an entropy source (Waste). Assertion:
 $$Action(S) \rightarrow \text{Optimize}(\Omega) \rightarrow \text{Remove}(H)$$
 
 
