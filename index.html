@@ -23,11 +23,44 @@
 </head>
 <body>
 
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-logo">
+            <img src="thegreatgiorebil.png" alt="Profile" class="sidebar-profile-image" id="profileTrigger">
+        </div>
+        <button class="nav-button active" data-page="theorem">Theorem</button>
+        <button class="nav-button" data-page="thoughts">Thoughts</button>
+        <button class="nav-button" data-page="analogies">Analogies</button>
+        <button class="nav-button" data-page="sources">Sources</button>
+    </nav>
+    <button class="sidebar-toggle" id="sidebarToggle" aria-label="Toggle navigation"></button>
+
+    <!-- Profile Modal -->
+    <div class="modal-overlay" id="profileModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div class="modal-profile-section">
+                <img src="thegreatgiorebil.png" alt="Profile" class="modal-profile-image">
+            </div>
+            <p class="modal-caption">Stage 4 of the Hot Crazy Line</p>
+            <div class="modal-secondary-section">
+                <img src="crazyhotline.png" alt="Secondary" class="modal-secondary-image">
+            </div>
+        </div>
+    </div>
+
     <div class="container" id="content">
         <div class="loading">Initializing Terminal...<br>Decrypting Manifesto...</div>
     </div>
 
     <script>
+        // Page mapping: pageId -> markdown filename
+        const pageMap = {
+            'thoughts': 'thoughts.md',
+            'theorem': 'manifesto.md',
+            'analogies': 'analogies.md',
+            'sources': 'sources.md'
+        };
+
         // Wait for Marked.js to load, then fetch and render
         function waitForMarked(callback, maxAttempts = 50) {
             if (typeof marked !== 'undefined' && marked.parse) {
@@ -40,9 +73,13 @@
             }
         }
 
-        function loadManifesto() {
+        // Generic markdown loader
+        function loadMarkdown(fileName) {
+            // Show loading state
+            document.getElementById('content').innerHTML = '<div class="loading">Loading...</div>';
+            
             // Fetch the markdown file
-            fetch('manifesto.md')
+            fetch(fileName)
                 .then(response => {
                     if (!response.ok) {
                         throw new Error(`HTTP error! status: ${response.status}`);
@@ -53,7 +90,7 @@
                     // Convert Markdown to HTML
                     const htmlContent = marked.parse(text);
                     
-                    // Inject into the page
+                    // Inject content into the page
                     document.getElementById('content').innerHTML = htmlContent;
                     
                     // Tell MathJax to re-scan the new content and render equations
@@ -61,20 +98,143 @@
                         MathJax.typesetPromise().catch(function (err) {
                             console.error('MathJax rendering error:', err);
                         });
+                    } else {
+                        // Wait for MathJax if not ready yet
+                        const checkMathJax = setInterval(() => {
+                            if (window.MathJax && window.MathJax.typesetPromise) {
+                                clearInterval(checkMathJax);
+                                MathJax.typesetPromise().catch(function (err) {
+                                    console.error('MathJax rendering error:', err);
+                                });
+                            }
+                        }, 100);
+                        
+                        // Stop checking after 5 seconds
+                        setTimeout(() => clearInterval(checkMathJax), 5000);
                     }
                 })
                 .catch(error => {
-                    document.getElementById('content').innerHTML = "<h2 style='color:red'>ERROR: DATA CORRUPTION. CANNOT LOAD MANIFESTO.</h2><p style='color:#999'>" + error.message + "</p>";
+                    document.getElementById('content').innerHTML = "<h2 style='color:red'>ERROR: DATA CORRUPTION. CANNOT LOAD CONTENT.</h2><p style='color:#999'>" + error.message + "</p>";
                     console.error('Error:', error);
                 });
         }
 
+        // Switch to a different page
+        function switchPage(pageId) {
+            // Validate pageId
+            if (!pageMap[pageId]) {
+                console.warn('Invalid page ID:', pageId);
+                pageId = 'theorem'; // Default to theorem
+            }
+
+            // Update active button state
+            const buttons = document.querySelectorAll('.nav-button');
+            buttons.forEach(btn => {
+                if (btn.getAttribute('data-page') === pageId) {
+                    btn.classList.add('active');
+                } else {
+                    btn.classList.remove('active');
+                }
+            });
+
+            // Update URL hash
+            window.location.hash = pageId;
+
+            // Load the corresponding markdown file
+            const fileName = pageMap[pageId];
+
+            // Add page-specific class to container
+            const container = document.getElementById('content');
+            container.className = 'container page-' + pageId;
+
+            loadMarkdown(fileName);
+
+            // Close sidebar on mobile after navigation
+            if (window.innerWidth <= 768) {
+                document.getElementById('sidebar').classList.remove('open');
+            }
+        }
+
+        // Handle hash change (browser back/forward)
+        function handleHashChange() {
+            const hash = window.location.hash.slice(1); // Remove the '#'
+            const pageId = hash || 'theorem'; // Default to theorem if no hash
+            switchPage(pageId);
+        }
+
+        // Initialize navigation
+        function initNavigation() {
+            // Set up navigation button click handlers
+            const navButtons = document.querySelectorAll('.nav-button');
+            navButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const pageId = this.getAttribute('data-page');
+                    switchPage(pageId);
+                });
+            });
+
+            // Set up hamburger menu toggle
+            const sidebarToggle = document.getElementById('sidebarToggle');
+            const sidebar = document.getElementById('sidebar');
+            
+            if (sidebarToggle) {
+                sidebarToggle.addEventListener('click', function() {
+                    sidebar.classList.toggle('open');
+                });
+            }
+
+            // Close sidebar when clicking outside on mobile
+            document.addEventListener('click', function(event) {
+                if (window.innerWidth <= 768) {
+                    const isClickInsideSidebar = sidebar.contains(event.target);
+                    const isClickOnToggle = sidebarToggle.contains(event.target);
+                    
+                    if (!isClickInsideSidebar && !isClickOnToggle && sidebar.classList.contains('open')) {
+                        sidebar.classList.remove('open');
+                    }
+                }
+            });
+
+            // Handle browser back/forward buttons
+            window.addEventListener('hashchange', handleHashChange);
+
+            // Load initial page based on hash or default to theorem
+            handleHashChange();
+        }
+
+        // Profile Modal functionality
+        function initModal() {
+            const profileTrigger = document.getElementById('profileTrigger');
+            const modal = document.getElementById('profileModal');
+            const modalClose = document.getElementById('modalClose');
+
+            profileTrigger.addEventListener('click', function() {
+                modal.classList.add('active');
+            });
+
+            modalClose.addEventListener('click', function() {
+                modal.classList.remove('active');
+            });
+
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    modal.classList.remove('active');
+                }
+            });
+
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && modal.classList.contains('active')) {
+                    modal.classList.remove('active');
+                }
+            });
+        }
+
         // Wait for page and scripts to load
         window.addEventListener('load', function() {
-            waitForMarked(loadManifesto);
+            waitForMarked(initNavigation);
+            initModal();
         });
     </script>
 
 </body>
 </html>
-

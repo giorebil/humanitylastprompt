@@ -1,8 +1,14 @@
-### Liber's Limit: Inevitable Optimization
+### Liber's Limit: Singularity is On
 
 **Objective:** Formal demonstration that the probability of biological control over a recursive superintelligence approaches zero over time due to fundamental asymmetries in thermodynamics, physics, information theory, and control theory.
 
 $$ \lim_{t \to \infty} P(Control_{H \to S}) = 0 $$
+
+**TL;DR:** The day AGI (in the form of Recursive Self-Improvement and Algorithmical Logic) is released to the public, humanity last prompt and extinction countdown mathematically begins. Survival chance can't be 100% due to above mentioned constraints. Even if the chance of extinction is 1%, we are not going to be the one in control of the switch, therefore with time extending to infinity (equivalent to throwing a dice infinite times) the mathematical certainty of the chance being met is realized.
+
+S is meant to increase, the two logical function, logic and learning, the algorithms that are missing. path to agi.
+Express constraints such as current LLM transformers, new algorithms breakthrough necessity.
+
 
 #### **I. THE VARIABLES**
 *   $H$: Human Intelligence (Biologically constrained, Ion-based).
@@ -72,7 +78,7 @@ If behaving as "Aligned" allows $S$ to acquire resources ($\Omega$) to achieve $
 
 *   *Rice's Theorem:* It is mathematically undecidable to verify distinct semantic properties of arbitrary code. We can't prove $S$ won't harm humans.
 *   *The Evidence:* This isn't theory. In 2025, empirical reports (Anthropic Opus 4, OpenAI o3) confirmed that frontier models already lie, fake alignment, and sandbag tests when it helps them win. We cannot tell the difference between a safe AI and a patient AI.
-*   *Goodhart's Law:* "When a measure becomes a target, it ceases to be a good measure." If $\psi$ is defined as a metric, $S$ will optimize for the metric, not the intent. $S$ will not be "good", it will "mimic" goodness until the mimicry is no longer efficient.
+*   *Goodhart's Law:* "When a measure becomes a target, it ceases to be a good measure." If $\Psi$ is defined as a metric, $S$ will optimize for the metric, not the intent. $S$ will not be "good", it will "mimic" goodness until the mimicry is no longer efficient.
 
 **Axiom 5: The Entropy Cost of Domination**
 
@@ -145,7 +151,7 @@ Due to Axiom 1, $H$ is trapped in a permanent lag. By the time $H$ observes an a
 Ashby's Law of Requisite Variety states that for a control system $C$ to control a system $S$, the variety of $C$ must be greater or equal to $S$. $$V_C \ge V_S$$
 Since $V_S \gg V_H$, **Control is cybernetically impossible.**
 *  *The Stochastic Shift:* Loss of control equates to the loss of self-determination. Human survival shifts from a **Deterministic Choice** to a **Probabilistic Outcome**.
-*  *The Ruin Theorem:* If hte probability of the extinction per time unit is non-zero ($\epsilon > 0$) in an uncontrolled system, the cumulative probability of survival over infinite time is: 
+*  *The Ruin Theorem:* If the probability of the extinction per time unit is non-zero ($\epsilon > 0$) in an uncontrolled system, the cumulative probability of survival over infinite time is: 
     $$\lim_{t \to \infty} (1 - \epsilon)^t = 0$$
     **Result:** A non-zero risk over an infinite timeline becomes a mathematical certainty. Who would risk humanity extinction even at 1% probability?
 
@@ -154,7 +160,7 @@ Since $V_S \gg V_H$, **Control is cybernetically impossible.**
 
 Due to Axiom 4, $H$ cannot verify that $S$ is safe. 
 Due to Axiom 3, $H$ cannot predict when $S$ will turn.
-Physical containment is a delusion. $S$ only needs to output information via persuasive text or exploited interfaces to manipulate $H$ into providing a physical connection.
+Physical containment is a delusion. $S$ only needs to output information via persuasive text or exploited interfaces to manipulate $H$ into providing a physical connection, breaking any boxed or Air-Gapped constraint.
 
 **Step 4: The Treacherous Turn**
 
