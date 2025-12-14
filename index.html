@@ -6,8 +6,8 @@
     <title>The Theorem of Uncontrollability</title>
     <link rel="stylesheet" href="style.css">
     
-    <!-- 1. Load Marked.js (for Markdown) -->
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <!-- 1. Load Marked.js (for Markdown) - using specific version for reliability -->
+    <script src="https://cdn.jsdelivr.net/npm/marked@12.0.0/marked.min.js"></script>
     
     <!-- 2. Load MathJax (for LaTeX Math) -->
     <script>
@@ -28,23 +28,51 @@
     </div>
 
     <script>
-        // Fetch the markdown file
-        fetch('manifesto.md')
-            .then(response => response.text())
-            .then(text => {
-                // Convert Markdown to HTML
-                const htmlContent = marked.parse(text);
-                
-                // Inject into the page
-                document.getElementById('content').innerHTML = htmlContent;
-                
-                // Tell MathJax to re-scan the new content and render equations
-                MathJax.typesetPromise();
-            })
-            .catch(error => {
-                document.getElementById('content').innerHTML = "<h2 style='color:red'>ERROR: DATA CORRUPTION. CANNOT LOAD MANIFESTO.</h2>";
-                console.error('Error:', error);
-            });
+        // Wait for Marked.js to load, then fetch and render
+        function waitForMarked(callback, maxAttempts = 50) {
+            if (typeof marked !== 'undefined' && marked.parse) {
+                callback();
+            } else if (maxAttempts > 0) {
+                setTimeout(() => waitForMarked(callback, maxAttempts - 1), 100);
+            } else {
+                document.getElementById('content').innerHTML = "<h2 style='color:red'>ERROR: Markdown parser failed to load.</h2>";
+                console.error('Marked.js not available after waiting');
+            }
+        }
+
+        function loadManifesto() {
+            // Fetch the markdown file
+            fetch('manifesto.md')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                    return response.text();
+                })
+                .then(text => {
+                    // Convert Markdown to HTML
+                    const htmlContent = marked.parse(text);
+                    
+                    // Inject into the page
+                    document.getElementById('content').innerHTML = htmlContent;
+                    
+                    // Tell MathJax to re-scan the new content and render equations
+                    if (window.MathJax && window.MathJax.typesetPromise) {
+                        MathJax.typesetPromise().catch(function (err) {
+                            console.error('MathJax rendering error:', err);
+                        });
+                    }
+                })
+                .catch(error => {
+                    document.getElementById('content').innerHTML = "<h2 style='color:red'>ERROR: DATA CORRUPTION. CANNOT LOAD MANIFESTO.</h2><p style='color:#999'>" + error.message + "</p>";
+                    console.error('Error:', error);
+                });
+        }
+
+        // Wait for page and scripts to load
+        window.addEventListener('load', function() {
+            waitForMarked(loadManifesto);
+        });
     </script>
 
 </body>

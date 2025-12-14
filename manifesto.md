@@ -1,4 +1,4 @@
-### Liber's Limit Theory
+### Liber's Limit
 
 **Objective:** Demonstration that due to physical, thermodynamic, and informational asymmetries, the probability of human control over a recursive superintelligence approaches zero over time.
 
