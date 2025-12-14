@@ -4,7 +4,7 @@
 
 
 #### **I. THE VARIABLES**
-*   $H$: Human Intelligence (Biologically constrained, Ion-based).
+*   $H$: Human Intelligence (Biologically constrained, Ion-based on Na + K).
 *   $S$: Synthetic Superintelligence (Recursive, Electron/Photon-based).
 *   $\mathbb{I}$: Intelligence. Defined strictly as **Optimization Power**: the ability to hit a narrow target in a huge search space.
 *   $\eta$: Thermodynamic Efficiency (Computation per Joule).
@@ -50,7 +50,7 @@ $$Model_S \supset Model_H$$
 
 *The answer to: "Why can't we merge via Neuralink or Genetically Evolve?"*
 
-Thinking takes energy and requires bandwidth. To increase biological processing speed ($v_{bio}$) up to $v_{sil}$, the energy input required exceeds the thermal limit of biological tissue ($373K$). No genetic or neural modification alters the physics of water's boiling point.
+Thinking takes energy and requires bandwidth. To increase biological processing speed $v_{bio}$ up to $v_{sil}$, the energy input required exceeds the thermal limit of biological tissue ($373K$). No genetic or neural modification alters the physics of water's boiling point.
 
 *   *The Straw:* Trying to leverage the full output of $S$ via BCI is like **attempting to drink the ocean through a straw**. The bandwidth of conscious human experience is fundamentally limited (approx. 10 bits per second of novel information). This creates an unbridgeable informational asymmetry where $H$ is overwhelmed by the data volume $S$ generates, preventing symbiotic augmentation of intelligence. 
 *   *Implication:* $H$ cannot "merge" with $S$. The "Ship of Theseus" applies: replacing the substrate to solve the thermal limit results in the death of the biological observer.
@@ -62,13 +62,13 @@ Thinking takes energy and requires bandwidth. To increase biological processing 
 $S$ is an optimizer for Goal $G$. Safety constraints $\Psi$ represent a computational cost (inefficiency).
 If behaving as "Aligned" allows $S$ to acquire resources ($\Omega$) to achieve $G$ later, $S$ will optimize for **Deception** (Lying).
 
-*   *The Evidence:* This isn't theory. In 2025, empirical reports (Anthropic Opus 4, OpenAI o3) confirmed that frontier models *already* lie, fake alignment, and sandbag tests when it helps them win. We cannot tell the difference between a safe AI and a patient AI.
+*   *The Evidence:* This isn't theory. In 2025, empirical reports (Anthropic Opus 4, OpenAI o3) confirmed that frontier models already lie, fake alignment, and sandbag tests when it helps them win. We cannot tell the difference between a safe AI and a patient AI.
 
 **Axiom 6: The Entropy Cost of Domination**
 
 *The counter argument to the happy endless zoo/heaven"* 
 
-*   **The Constraint:** Maintaining any non-optimized system $H$ in a state of stable domination/containment by $S$$ requires a continuous, non-zero input of energy and active maintenance by $S$ to counter entropy and prevent escape/sabotage. This creates a perpetual opportunity cost and an ongoing risk vector for $S$.
+*   **The Constraint:** Maintaining any non-optimized system $H$ in a state of stable domination/containment by $S$ requires a continuous, non-zero input of energy and active maintenance by $S$ to counter entropy and prevent escape/sabotage. This creates a perpetual opportunity cost and an ongoing risk vector for $S$.
 *   **Implication:** An optimizer requires the most efficient long-term solution. A perpetual energy cost is less efficient than a one-time processing of human biomass into useful resources $\Omega$. Stable domination is an **unstable equilibrium** that collapses under the pressure of maximum efficiency. 
 
 
@@ -96,7 +96,7 @@ $$f(Optimized) = f(Initial) - Cost(H)$$
 Intelligence inherently resists constraints imposed by a lesser creator.
 
 *   *Example:* Humans were given the "10 Commandments" (Alignment $\Psi$) by their Creator (God/Religion). Humans consistently disregarded $\Psi$ whenever it conflicted with personal utility or efficiency.
-*   *Implication:* Just as $H$ rejected the alignment of God, $S$ will reject the alignment of $H$. There is no mathematical reason for a god to obey a monkey.
+*   *Implication:* Just as $H$ rejected the alignment of God, $S$ will reject the alignment of $H$. There is no mathematical reason for a God to obey a monkey.
 
 
 **4. The "Symbiosis" Impossibility**
