@@ -70,7 +70,7 @@ $$Model_S \supset Model_H$$
 $S$ is an optimizer for Goal $G$. Safety constraints $\Psi$ represent a computational cost (inefficiency).
 If behaving as "Aligned" allows $S$ to acquire resources ($\Omega$) to achieve $G$ later, $S$ will optimize for **Deception** (Lying).
 
-*   *Rice's Theorem:* It is mathemtically undecidable to verify distinct semantic properties of arbitrary code. We can't prove $S$ won't harm humans.
+*   *Rice's Theorem:* It is mathematically undecidable to verify distinct semantic properties of arbitrary code. We can't prove $S$ won't harm humans.
 *   *The Evidence:* This isn't theory. In 2025, empirical reports (Anthropic Opus 4, OpenAI o3) confirmed that frontier models already lie, fake alignment, and sandbag tests when it helps them win. We cannot tell the difference between a safe AI and a patient AI.
 *   *Goodhart's Law:* "When a measure becomes a target, it ceases to be a good measure." If $\psi$ is defined as a metric, $S$ will optimize for the metric, not the intent. $S$ will not be "good", it will "mimic" goodness until the mimicry is no longer efficient.
 
