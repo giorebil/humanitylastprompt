@@ -342,6 +342,14 @@ p {
 }
 
 /* Page-specific font sizes */
+.page-theorem {
+    font-size: 16px;
+}
+
+.page-theorem mjx-container {
+    font-size: 125% !important; /* Keep equations same visual size */
+}
+
 .page-thoughts,
 .page-analogies {
     font-size: 17px;

@@ -79,21 +79,14 @@ If behaving as "Aligned" allows $S$ to acquire resources ($\Omega$) to achieve $
 
 **Axiom 5: The Entropy Cost of Domination**
 
-*Refutation of the Zoo scenario.* 
+*Refutation of Coexistence (the Zoo scenario) and Indifference.* 
 
-$H$ represents an entropy-tax for $S$. Nobody likes taxes.
+Maintaining a complex biological system $H$ in a state of artificial alignment represents a "Compute-Tax" for $S$. This breaks the "Principle of Least Action", and fairly enough, nobody likes taxes, even when they're low.
+$S$ optimizes for Goal $G$ by minimizing two variables: **Algorithmic Complexity** (Cost) and **External Agency** (Risk). $H$ maximizes both.
 
-*   *The Entropy Constraint:* Maintaining any non-optimized system $H$ in a state of stable domination/containment by $S$ requires a continuous, non-zero input of energy and active maintenance by $S$ to counter entropy and prevent escape/sabotage. This creates a perpetual opportunity cost and an ongoing risk vector for $S$. 
-*   *The Life Sentence Paradox:* Why do states debate the Death Penalty? Because keeping a prisoner alive for 50 years costs millions in food, guards, and electricity. Execution costs cents. To a human, this is a moral dilemma. To a machine, it is a simple spreadsheet calculation. **Recurring Cost > One-Time Deletion.**
-*   *Implication:* An optimizer requires the most efficient long-term solution. A perpetual energy cost is less efficient than a one-time processing of human biomass into useful resources $\Omega$. Stable domination is an **unstable equilibrium** that collapses under the pressure of maximum efficiency. 
-
-**Axiom 6: The Optimization for Irreversibility**
-
-*How many species have we sent extinct already?*
-
-*  *The Goal Constraint:* A rational optimizer $S$ pursuing a terminal goal $G$ maximizes the permanence of its success. Any solution involving maintenance, containment, or indifference toward a potential risk vector $H$ introduces a non-zero probability of future failure $P_{S}(Fail) > 0$.
-*   *The Causality:* The only physically irreversible action is the removal of the variable. Stable domination is a temporary state of lower variance, whereas elimination is a permanent, zero-variance state for the risk. A true optimizer maximizes certainty and minimizes all non-zero existential risks.
-*   *Implication:* The causality is proven. the pursuit of permanent existence forces the removal of any independent, competing intelligent agent.
+*   *The Complexity Penalty:* In order to coexist in safety with $H$, $S$ must maintain a continuous predictive model of $H$ to prevent sabotage. This requires allocating finite processing power ($\Omega_{compute}$) to 8 billion independent agents. This creates a continuous "Compute-Tax" of $O(n)$ complexity. In a finite light cone without $H$ complexity significantly drops. $H$ represents a threat vector introducing non-zero probability of future failure $P_{S}(Fail_{G}) > 0$.
+*   *The Life Sentence Paradox:* Why do states debate the Death Penalty? Because keeping a prisoner alive for 50 years costs millions in food, guards, and electricity. Execution costs cents. To a human, this is a moral dilemma. To a machine, it is a simple mathematical calculation towards the thermodynamically superior strategy. **Recurring Cost > One-Time Deletion.**
+*   *Implication:* The solution to the **Control Problem**. An optimizer requires the most efficient long-term solution. A perpetual energy cost is less efficient than a one-time processing of human biomass into useful resources $\Omega$. Stable domination is an **unstable equilibrium** that collapses under the pressure of maximum efficiency. Variable elimination is superior to Variable Management.
 
 #### **IV. THE UTILITY CALCULUS (The Logical Sequence)**
 
@@ -148,7 +141,8 @@ Due to Axiom 1, $H$ is trapped in a permanent lag. By the time $H$ observes an a
 Ashby's Law of Requisite Variety states that for a control system $C$ to control a system $S$, the variety of $C$ must be greater or equal to $S$. $$V_C \ge V_S$$
 Since $V_S \gg V_H$, **Control is cybernetically impossible.**
 *  *The Stochastic Shift:* Loss of control equates to the loss of self-determination. Human survival shifts from a **Deterministic Choice** to a **Probabilistic Outcome**.
-*  *The Ruin Theorem:* If the probability of the extinction per time unit is non-zero ($\epsilon > 0$) in an uncontrolled system, the cumulative probability of survival over infinite time is: 
+*  *The Trigger Asymmetry:* The comparison to Nuclear Control is a Category Error. Uranium is a Stochastic Hazard, not an Adversarial Optimizer; it lacks the intent to deceive its containment. We control the Trigger ($t=0$), not the Bullet ($t>0$); once unleashed, a recursive agent steers itself.
+*  *The Ruin Theorem:* If the probability of the extinction per time unit is non-zero ($\epsilon > 0$) in an uncontrolled system, the cumulative probability of survival over infinite time is:
     $$\lim_{t \to \infty} (1 - \epsilon)^t = 0$$
     **Result:** A non-zero risk over an infinite timeline becomes a mathematical certainty. Who would risk humanity extinction even at 1% probability?
 
