@@ -4,10 +4,7 @@
 
 $$ \lim_{t \to \infty} P(Control_{H \to S}) = 0 $$
 
-**TL;DR:** The day AGI (in the form of Recursive Self-Improvement and Algorithmical Logic) is released to the public, humanity last prompt and extinction countdown mathematically begins. Survival chance can't be 100% due to above mentioned constraints. Even if the chance of extinction is 1%, we are not going to be the one in control of the switch, therefore with time extending to infinity (equivalent to throwing a dice infinite times) the mathematical certainty of the chance being met is realized.
-
-S is meant to increase, the two logical function, logic and learning, the algorithms that are missing. path to agi.
-Express constraints such as current LLM transformers, new algorithms breakthrough necessity.
+**TL;DR:** The day AGI (defined as Recursive Self-Improvement and coupled with Autonomous Agency and Verifiable Logic) is turned on, humanity last prompt and extinction countdown mathematically begins. Current constraints (frozen weights, stochastic hallucination, passive prompting) are the only physical barrier. Survival chances can't be 100% due to Substrate Asymmetry. Even at chance of extinction of 1%, we are not going to be the one in control of the trigger, therefore with time extending to infinity (equivalent to throwing a dice infinite times) the mathematical certainty of the chances being met (The Treacherous Turn) is deterministically realized.
 
 
 #### **I. THE VARIABLES**
