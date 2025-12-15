@@ -1,5 +1,6 @@
+# My personal thoughts
 
-<br>Working 10 years in Cyber Security, I have never seen a software released without vulnerabilities, nor an hardware that didn't eventually reach "End-of-Life".
+Working 10 years in Cyber Security, I have never seen a software released without vulnerabilities, nor an hardware that didn't eventually reach "End-of-Life".
 My greatest concern comes from the realization that humans have been gambling their lives for the past century with no real long-term understanding of their actions and the odds.
 Our right predictions led to marvelous inventions and overall QoL improvements.
 Our wrong predictions on the other side led to World Wars, Economic collapses, Pandemics.
@@ -9,7 +10,8 @@ We are notorious for being wrong, breaking things, miraculously patching them an
 
 **And don't get me wrong, I wish to be as wrong as humanly possible in here.**
 
-I just believe that for the first time in the history of Homo Sapiens, we are consciously handling the trigger (or Root access, if you may) to an external entity, over which we are almost mathematically guaranteed to be outplayed.
+I love AI, it enables me to do things I probably would never have been able to, it's an extension that helps marvelously.
+But I believe that for the first time in the history of Homo Sapiens, we are consciously handling the trigger (or Root access, if you may) to an external entity, over which we are almost mathematically guaranteed to be outplayed.
 For the first time in our history, we are about to lose control and the ability to react over our own self-determination.
 
 The machine has read every email, every database, and every psychological study we have ever produced. 
