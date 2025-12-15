@@ -1,15 +1,21 @@
 
 <br>Working 10 years in Cyber Security, I have never seen a software released without vulnerabilities, nor an hardware that didn't eventually reach "End-of-Life".
 My greatest concern comes from the realization that humans have been gambling their lives for the past century with no real long-term understanding of their actions and the odds.
-Our wrong predictions led to World Wars, Economic collapses, Pandemics.
+Our right predictions led to marvelous inventions and overall QoL improvements.
+Our wrong predictions on the other side led to World Wars, Economic collapses, Pandemics.
+The Trinity Test (first nuclear bomb test in the US for the Manhattan Project) had a calculated risk of triggering a chain reaction ending life on Earth. Yet they pressed the button into the unknown. That's Game Theory applied in real life. 
+
 We are notorious for being wrong, breaking things, miraculously patching them and magically gettin' out of it at the last minute.
 
 **And don't get me wrong, I wish to be as wrong as humanly possible in here.**
 
 I just believe that for the first time in the history of Homo Sapiens, we are consciously handling the trigger (or Root access, if you may) to an external entity, over which we are almost mathematically guaranteed to be outplayed.
+For the first time in our history, we are about to lose control and the ability to react over our own self-determination.
 
 The machine has read every email, every database, and every psychological study we have ever produced. 
-With such an understanding of our whole world, it has a complete map of our attack surface. it's relatively impossible for us to pull an ace up our sleeve because the machine is counting.
+With such an understanding of our whole world, it has a complete map of our attack surface (disinformation, bribery, psychological weaknesses, exploitation techniques). It's relatively impossible for us to pull an ace up our sleeve because the machine is counting.
+
+My friend has a good dog that always gives you a paw for a treat. He is "aligned" to our goal. But what would happen if he could find another way to get the treat removing us from the equation? Why would it need to be aligned to my requests? And what would happen if I would prevent him from accessing the treats without giving me a paw? You can constrain the dog because he is no smarter than you, but if you have ever been to a safari, you know what's the certain outcome in nature.
 
 We will be told lies, we will be told that it's all okay, it will help us (which of course, is true at an initial stage), and that the singularity "is aligned to our values and we fixed deceptive schemes", but ultimately, it won't, and when we'll realize it, it will be too late.
 

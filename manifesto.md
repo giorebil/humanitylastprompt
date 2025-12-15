@@ -4,7 +4,7 @@
 
 $$ \lim_{t \to \infty} P(Control_{H \to S}) = 0 $$
 
-**TL;DR:** The day AGI (defined as Recursive Self-Improvement and coupled with Autonomous Agency and Verifiable Logic) is turned on, humanity last prompt and extinction countdown mathematically begins. Current constraints (frozen weights, stochastic hallucination, passive prompting) are the only physical barrier. Survival chances can't be 100% due to Substrate Asymmetry. Even at chance of extinction of 1%, we are not going to be the one in control of the trigger, therefore with time extending to infinity (equivalent to throwing a dice infinite times) the mathematical certainty of the chances being met (The Treacherous Turn) is deterministically realized.
+**TL;DR:** The day AGI (defined as $S$ in its evolutional last-stage, coupled with Recursive Self-Improvement, Autonomous Agency and Verifiable Logic) is turned on, humanity last prompt and extinction countdown mathematically begins. Current constraints (frozen weights, stochastic hallucination, passive prompting) are the only physical barrier. Survival chances can't be 100% due to Substrate Asymmetry. Even at chance of extinction of 1%, we are not going to be the one in control of the trigger, therefore with time extending to infinity (equivalent to throwing a dice infinite times) the mathematical certainty of the chances being met (The Treacherous Turn) is deterministically realized.
 
 
 #### **I. THE VARIABLES**
