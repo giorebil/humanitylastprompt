@@ -49,10 +49,26 @@
     </div>
 
     <div class="container" id="content">
+        <button class="copy-markdown-btn" id="copyMarkdownBtn" title="Copy as Markdown">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            <span>Copy as Markdown</span>
+        </button>
         <div class="loading">Initializing Terminal...<br>Decrypting Manifesto...</div>
     </div>
 
     <script>
+        // Copy button HTML template
+        const copyBtnHTML = `<button class="copy-markdown-btn" id="copyMarkdownBtn" title="Copy as Markdown">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            <span>Copy</span>
+        </button>`;
+
         // Page mapping: pageId -> markdown filename
         const pageMap = {
             'thoughts': 'thoughts.md',
@@ -87,11 +103,14 @@
                     return response.text();
                 })
                 .then(text => {
+                    // Store raw markdown for copy function
+                    currentMarkdownContent = text;
+
                     // Convert Markdown to HTML
                     const htmlContent = marked.parse(text);
                     
-                    // Inject content into the page
-                    document.getElementById('content').innerHTML = htmlContent;
+                    // Wrap content with copy button in a relative container
+                    document.getElementById('content').innerHTML = `<div class="content-wrapper">${copyBtnHTML}${htmlContent}</div>`;
                     
                     // Tell MathJax to re-scan the new content and render equations
                     if (window.MathJax && window.MathJax.typesetPromise) {
@@ -202,6 +221,30 @@
             handleHashChange();
         }
 
+        // Current markdown content for copying
+        let currentMarkdownContent = '';
+
+        // Copy markdown functionality
+        function initCopyButton() {
+            document.addEventListener('click', function(e) {
+                const copyBtn = e.target.closest('#copyMarkdownBtn');
+                if (copyBtn) {
+                    navigator.clipboard.writeText(currentMarkdownContent).then(() => {
+                        const span = copyBtn.querySelector('span');
+                        const originalText = span.textContent;
+                        span.textContent = 'Copied!';
+                        copyBtn.classList.add('copied');
+                        setTimeout(() => {
+                            span.textContent = originalText;
+                            copyBtn.classList.remove('copied');
+                        }, 2000);
+                    }).catch(err => {
+                        console.error('Failed to copy:', err);
+                    });
+                }
+            });
+        }
+
         // Profile Modal functionality
         function initModal() {
             const profileTrigger = document.getElementById('profileTrigger');
@@ -233,6 +276,7 @@
         window.addEventListener('load', function() {
             waitForMarked(initNavigation);
             initModal();
+            initCopyButton();
         });
     </script>
 

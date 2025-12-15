@@ -1,4 +1,5 @@
-Working 10 years in Cyber Security, I have never seen a software released without vulnerabilities, nor an hardware that didn't eventually reach "End-of-Life".
+
+<br>Working 10 years in Cyber Security, I have never seen a software released without vulnerabilities, nor an hardware that didn't eventually reach "End-of-Life".
 My greatest concern comes from the realization that humans have been gambling their lives for the past century with no real long-term understanding of their actions and the odds.
 Our wrong predictions led to World Wars, Economic collapses, Pandemics.
 We are notorious for being wrong, breaking things, miraculously patching them and magically gettin' out of it at the last minute.

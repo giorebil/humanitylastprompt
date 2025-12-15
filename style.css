@@ -209,10 +209,51 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
-/* All direct children get max-width for centered column look */
-.container > * {
+/* Copy Markdown Button */
+.copy-markdown-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: none;
+    border: none;
+    color: #555;
+    font-family: inherit;
+    font-size: 11px;
+    padding: 4px 8px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+    width: auto;
+    max-width: none;
+}
+
+.copy-markdown-btn:hover {
+    color: #c0c0c0;
+}
+
+.copy-markdown-btn.copied {
+    color: #4a9;
+}
+
+.copy-markdown-btn svg {
+    flex-shrink: 0;
+}
+
+/* Content wrapper for positioning */
+.content-wrapper {
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    text-align: left;
+}
+
+/* All direct children get max-width for centered column look (except copy button) */
+.container > *:not(.copy-markdown-btn):not(.content-wrapper) {
     max-width: 700px;
     width: 100%;
     text-align: left; /* Text left-aligned within centered container */
@@ -349,6 +390,10 @@ p {
     .container {
         margin-left: 0;
         padding: 80px 20px 20px 20px;
+    }
+
+    .copy-markdown-btn span {
+        display: none;
     }
 
     .sidebar-logo {
