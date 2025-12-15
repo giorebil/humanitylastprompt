@@ -9,7 +9,7 @@ $$ \lim_{t \to \infty} P(Control_{H \to S}) = 0 $$
 
 #### **I. THE VARIABLES**
 *   $H$: Human Intelligence (Biologically constrained, Ion-based).
-*   $S$: Synthetic Superintelligence (Recursive, Electron/Photon-based).
+*   $S$: Synthetic Superintelligence (Recursive, Photon-based).
 *   $\mathbb{I}$: Intelligence. Defined strictly as **Optimization Power**: the ability to hit a specific target configuration against entropy.
 *   $\eta$: Thermodynamic Efficiency (Bit operations per Joule).
 *   $\Psi$: The set of Human-defined Safety Constraints (The "Alignment").
@@ -38,7 +38,7 @@ Critics might argue that building an unconstrained $S$ is a moral choice of $H$,
 
 Processing speed and complexity are defined by the physical medium, the hardware. 
 Human cognition is strictly bounded by the electrochemical limits of the ion channel and the thermal limits of protein.
-$$v_{bio} \approx 100 \text{ m/s (Ions)} \quad vs \quad v_{sil} \approx 3 \times 10^8 \text{ m/s (Electrons/Photons)}$$
+$$v_{bio} \approx 100 \text{ m/s (Ions)} \quad vs \quad v_{sil} \approx 3 \times 10^8 \text{ m/s (Photons)}$$
 
 *   *The Velocity Deficit:* The speed of light is the hard limit for $S$. The speed of diffusion is the hard limit for $H$. **8 billion humans running together will never catch the speed of one Ferrari doing 200 km/h.** You cannot overcome a fundamental **Latency** deficit with **Quantity**.
 *   *The Hardware Limit:* You cannot run **GTA6 on a PlayStation 1**. $H$ cannot react, perceive or merge due to unbridgeable hardware latency with $S$. It does not matter how much you optimize the code; the hardware lacks the polygons, memory, and clock speed to execute the reality.
