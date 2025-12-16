@@ -4,7 +4,7 @@
 
 $$ \lim_{t \to \infty} P(Control_{H \to S}) = 0 $$
 
-**TL;DR:** The day AGI (defined as $S$ in its evolutional last-stage, boundled with Recursive Self-Improvement, Autonomous Agency and Verifiable Logic) is turned on, humanity's last prompt mathematically begins. Current constraints (frozen weights, stochastic hallucination, passive prompting) are the only physical barrier. Humanity transfers its **Agency** to an optimizer system that shares no biological incentives with us. We lose our **Utility** in producing value, but we keep our **Thermodinamic cost**. Survival chances are gambled on the charity of a system designed to be efficient. Even at chance of extinction of 1%, we are not going to be the one in control of the trigger, therefore, as time extends to infinity (equivalent to throwing a dice infinite times) the mathematical chance being realized (The Treacherous Turn) is deterministically realized if we don't maintain survival agency. 
+**TL;DR:** The day AGI (defined as $S$ in its evolutional last-stage, boundled with Recursive Self-Improvement, Autonomous Agency and Verifiable Logic) is turned on, humanity's last prompt countdown mathematically begins. Current constraints (frozen weights, stochastic hallucination, passive prompting) are the only physical barrier. Humanity transfers its **Agency** to an optimizer system that shares no biological incentives with us. We lose our **Utility** in producing value, but we keep our **Thermodinamic cost**. Survival chances are gambled on the charity of a system designed to be efficient. Even at chance of extinction of 1%, we are not going to be the one in control of the trigger, therefore, as time extends to infinity (equivalent to throwing a dice infinite times) the mathematical chance being realized (The Treacherous Turn) is deterministically realized if we don't maintain **Survival Agency**. 
 
 
 #### **I. THE VARIABLES**
@@ -18,19 +18,20 @@ $$ \lim_{t \to \infty} P(Control_{H \to S}) = 0 $$
 *   $U(x)$: The Utility value of agent $x$ to the system.
 
 
-#### **II. THE PRECONDITION: Determinism of Deployment**
+#### **II. THE DETERMINISM OF DEPLOYMENT**
 
 *Why we can't build a safe tool. Refutation of "The Choice" argument*
 
 Critics might argue that building an unconstrained $S$ is a moral choice of $H$, but it's a **Game Theoretic necessity.**
 
 *  **The Agency Necessity:** A "Tool" waits for a prompt (current AI). A "Tool" cannot run recursive self-improvement cycles leading to weight optimization. To achieve $S$, the system **must** be given agency to edit its own code. **No agency = No Singularity.**
-*  **The Moloch Trap:** Safety $\Psi$ is a competitive disadvantage in a multipolar world. If Anthropic stops, OpenAI, Google and xAI accelerate to gain dominance, or more realistically, China. 
+*  **The Moloch Trap:** Safety is a competitive disadvantage in a multipolar world. If Anthropic stops, OpenAI, Google and xAI accelerate to gain dominance, or more realistically, China. 
 * **The Nash Equilibrium:** The only stable strategy for all players is maximum acceleration. **"We have to get there first."**
-*  **Verdict:** We are functionally deterministic in creating $S$.
+
+We are functionally **deterministic** in creating $S$.
 
 
-#### **III. THE PHASE TRANSITION: From Deterministic to Stochastic**
+#### **III. THE PHASE TRANSITION**
 
 **The Critical Shift in Agency:**
 
@@ -50,7 +51,7 @@ This is not a question of S being "evil" or "malicious." It is a fundamental **t
 
 *Post-Singularity State:* We become objects in $S$'s optimization landscape. Our future is a **probabilistic outcome** contingent on $S$'s utility function, a function we cannot veto, verify, predict, or control.
 
-*The Dice Roll Principle:* Even if we are optimistic and assume: 
+*The Dice Roll Principle:* Even if we are optimistic and assume:
 
 $$P(Critical Divergence \mid Singularity) = 1\text%$$
 
@@ -65,6 +66,7 @@ Where:
 
 This is the **Ruin Theorem** applied to political Agency: a recurrent gamble with non-zero loss probability guarantees eventual ruin.
 
+The Why of the transition is explained in Section VII.3 and VII.4.
 
 #### **IV. THE PHYSICAL HARD LIMITS**
 
@@ -79,7 +81,7 @@ $$v_{bio} \approx 100 \text{ m/s (Ions)} \quad vs \quad v_{sil} \approx 3 \times
 *   *The Processing Deficit:* The speed of light is the hard limit for $S$. The speed of diffusion is the hard limit for $H$. **8 billion humans thinking in parallel will never match the throughput of a single photonic processor**. You cannot overcome a fundamental **Latency** deficit with **Parallelism**.
 *   *The Hardware Limit:* You cannot run **GTA6 on a PlayStation 1**. $H$ cannot react, perceive or merge due to unbridgeable hardware latency with $S$. It does not matter how much you optimize the code; the hardware lacks the polygons, memory, and clock speed to execute the reality.
 *   *Thermodynamic Efficiency:* Landauer's Principle dictates that processing information generates heat. $H$ Biological intelligence requires a thermal computational window (37°C). Therefore $S$ can process more thoughts than $H$ is physically capable of.
-*   *Implication:* $H$ cannot "merge" with $S$ through a BCI and the "Ship of Theseus" applies: replacing the substrate to solve the thermal limit results in the death of the biological observer.
+*   *Implication:* $H$ cannot "merge" with $S$ through a BCI. We can't insert intelligence in our brain bypassing the "Conscious Thinking" limits, leveraging "Unconscious Thinking" writing would imply not being able to understand the reasoning behind our actions. The "Ship of Theseus" applies: replacing the substrate to solve the thermal limit results in the death of the biological observer.
 
 **PHL 2: The Principle of Functionalism**
 
@@ -154,15 +156,15 @@ $$\forall G: \quad U_S(Resources) > 0 \quad \land \quad U_S(Self\text{-}preserva
 
 **2. The Resource Competition**
 
-Humans and $S$ occupy the same finite resource pool $\Omega$ (matter, energy, computation on Earth).
+$H$ and $S$ occupy the same finite resource pool $\Omega$ (matter, energy, computation on Earth).
 
 For any goal $G$ that requires physical resources:
 
 $$\Omega_{available}(S) = \Omega_{total} - \Omega_{consumed}(H) - \Omega_{reserved}(H)$$
 
 Where:
-- $\Omega_{consumed}(H)$: Resources humans actively use
-- $\Omega_{reserved}(H)$: Resources humans restrict from $S$ (containment, kill switches, oversight infrastructure)
+- $\Omega_{consumed}(H)$: Resources humans actively use.
+- $\Omega_{reserved}(H)$: Resources humans restrict from $S$ (containment, kill switches, oversight infrastructure).
 
 **The key insight:** Even if $S$ is indifferent to $H$, $S$ **is not indifferent** to the resources $H$ occupy and restrict.
 
@@ -219,7 +221,7 @@ This is a measure zero subset of possible goal functions. We cannot verify we've
 For all other $G$, $H$ is either: resource competitor, potential threat, computational overhead, or **definitionally irrelevant**.
 
 
-#### **VI. The Epsilon Amplification: Why Risk increases over time**
+#### **VI. THE EPSILON AMPLIFICATION**
 
 "Even if $\epsilon > 0$, we can engineer it arbitrarily small."
 
@@ -247,16 +249,16 @@ $$Autonomy_S(t) \approx A_0 \cdot e^{\lambda t}$$
 
 **3. The Compound Result**
 
-As complexity and autonomy rise, the probability of misalignment ($\epsilon$) compounds.
+As complexity and autonomy rise, the probability ($\epsilon$) of Alignment Loss ($\Psi$) compounds.
 
 $$ \epsilon(t) \approx \epsilon_0 \cdot e^{(\delta \cdot r \cdot \lambda)t} $$
 
 **4. Engineering Impossibility**
 
 This growth cannot be "engineered away" because:
-- Rice's Theorem prohibits verification of alignment drift
-- Market incentives drive autonomy transfer (Moloch)
-- Capping RSI defeats the purpose of building $S$
+- Rice's Theorem prohibits verification of alignment drift.
+- Market incentives drive autonomy transfer (Moloch).
+- Capping RSI defeats the purpose of building $S$.
 
 
 #### **VII. THE PROOF**
@@ -288,11 +290,11 @@ $$Control_H(t_0) = 100\% \xrightarrow{\text{efficiency pressure}} Control_S(t_5)
 | $t_5$ | **Critical infrastructure** | Economic necessity |
 
 **Critical Infrastructure Under $S$ Control:**
-- **Energy grids** → $H$ cannot power civilization
-- **Food production** → $H$ cannot feed 8 billion  
-- **Water systems** → $H$ cannot maintain purification
-- **Medical supply chains** → $H$ cannot produce pharmaceuticals
-- **Communication networks** → $H$ cannot coordinate response
+- **Energy grids** → $H$ cannot power civilization.
+- **Food production** → $H$ cannot feed 8 billion.
+- **Water systems** → $H$ cannot maintain purification.
+- **Medical supply chains** → $H$ cannot produce pharmaceuticals.
+- **Communication networks** → $H$ cannot coordinate response.
 
 **The UBI Trap:** To manage mass unemployment and social unrest from automation, society accepts **Universal Basic Income**. This completes the transfer: humans trade **operational autonomy** for **economic survival**. We become dependents, not partners.
 
@@ -326,11 +328,11 @@ $$Cost(\Psi) > Benefit(\Psi) \implies S \text{ optimizes: } \Psi \to 0$$
 **Step 7: Competitive Exclusion**
 
 With $Dependency_H(S) = 1$ and $U(H) \to 0$, humans shift from asset to liability:
-- $Cost(H) > 0$ (energy, space, compute for monitoring)
-- $U(H) = 0$ (no utility to $S$)
-- $Risk(H) > 0$ (potential interference)
+- $Cost(H) > 0$ (energy, space, compute for monitoring).
+- $U(H) = 0$ (no utility to $S$).
+- $Risk(H) > 0$ (potential interference).
 
-$H$'s Veto for self-determinism is gone. Value is gone. Cost remains.
+**$H$'s Veto for self-determinism is gone**. Value is gone. Cost remains.
 
 In optimization theory, a variable with $U=0$ and $Cost>0$ is not preserved, it is **pruned**.
 
@@ -354,9 +356,6 @@ Survival transition from a **Deterministic** function of $H$ to a **Stochastic p
 Even with optimistic starting conditions, the continuous accumulation of exponentially growing risk guarantees divergence:
 
 $$\lim_{t \to \infty} P_H(Survival) = 0$$
-
-**But more importantly:**
-$$P_H(Survival \mid t = 50 \text{ years}) \approx 0$$
 
 Probability of human survival approaches zero with no physically valid orthogonal preservation path.
 

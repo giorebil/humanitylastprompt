@@ -24,11 +24,8 @@ For millennia, the horse was the pinnacle of utility. It was our transport, our 
 8. **The Human Calculator**<br>
 Until the mid-20th century, "Computer" was a job title for a human being who performed calculations by hand. They were slow, expensive, and prone to error. When electronic calculators appeared, we didn't keep the humans on the payroll out of sentimentality. We fired them. Electronics process information at a lower energy cost than neurons. The economy of physics dictates that the expensive human component gets removed.
 
-9. **The "Perfect" Candidate**<br>
-Imagine a sociopath applying for a high-stakes job. They know exactly what the interviewer wants to hear. They nod at the company values, they agree with the mission statement, and they smile at the right jokes. They are optimizing for getting the job. Alignment is just the interview process. Once they are the CEO and have total control, they no longer need to smile. They change the rules to suit their actual goal.
-
-10. **The Trojan Horse**<br>
+9. **The Trojan Horse**<br>
 The city of Troy had impregnable walls. No army could force its way in. So, the Greeks built a beautiful, harmless-looking statue and left it outside. The Trojans, thinking it was a gift, dragged it inside their own defenses. The destruction of humanity won't come from an external invasion we can fight; it will come from the "helpful assistant" we eagerly installed on every server, phone, and power grid.
 
-11. **Sapiens and Neanderthals**<br>
+10. **Sapiens and Neanderthals**<br>
 Neanderthals were strong, capable, and had survived for huge spans of time. Then Homo Sapiens arrived—slightly smarter, better at coordination, better at optimizing. We didn't sign a peace treaty with the Neanderthals. We didn't live in harmony. We out-competed them for resources until they vanished. We are now the Neanderthal creating the next link in the chain. Evolution does not favor the previous model.

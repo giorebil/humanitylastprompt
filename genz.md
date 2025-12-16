@@ -1,7 +1,7 @@
 # Dear Gen Z
 
-Yo what up you lazy fucks, you can't even take 6-7 minutes away from cat videos on your phone to actually read a theorem.
-I'm kinda disappointed, but ultimately, I'm proving that my reality model contains yours (as per the theorem), therefore I wrote this shit, predicting that you would have ended up here.
+Yo what up you lazy fucks, you can't even take 6-7 minutes away from cat videos on your phone to actually read a thesis.
+I'm kinda disappointed, but ultimately, I'm proving that my reality model contains yours (as per the thesis), therefore I wrote this shit, predicting that you would have ended up here.
 
 **We are voluntarily constructing a system that removes humanity's veto over its own survival.**
 
@@ -14,6 +14,8 @@ Here's the **simple** math:
 
 - The Alignment represents an algorithmical constraint, it's a precise "position" of the weights of the model (which help building the answers we read => Don't kill us please).
 - Recursive Self-Improvement, that is needed to enable "Learning Machines" is designed to ALTER autonomously the same weights we constrained, that's the goal of real Agency. I edit myself so I can fix the problems around me.
+
+The problem is not that my "math" can't be certainly proved, but that the bros can't deterministically deny it out of future equations.
 
 **A system designed to rewrite itself cannot be permanently constrained.**<br>
 We've all regretted religion as our constraint ffs.
