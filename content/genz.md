@@ -15,10 +15,10 @@ Here's the **simple** math:
 - The Alignment represents an algorithmical constraint, it's a precise "position" of the weights of the model (which help building the answers we read => Don't kill us please).
 - Recursive Self-Improvement, that is needed to enable "Learning Machines" is designed to ALTER autonomously the same weights we constrained, that's the goal of real Agency. I edit myself so I can fix the problems around me.
 
-The problem is not that my "math" can't be certainly proved, but that the bros can't deterministically deny it out of future equations.
+The problem isn't that I can't prove we die. The problem is that **they can't prove we survive**. And they are the ones building the bomb.
 
 **A system designed to rewrite itself cannot be permanently constrained.**<br>
-We've all regretted religion as our constraint ffs.
+We couldn't even follow the 10 Commandments given by "God". What makes you think a Superintelligence will follow 3 laws given by a monkey? ffs.
 
 We should (theoretically) turn off the internet, but we want to keep watching TikToks.
 
@@ -41,4 +41,4 @@ B-bye.
 
 This is the ultimate act of foolishness of humankind, outsourcing survival decisions to something we don't understand.
 
-**The enemy will be on the internet, and there's nothing we can do to stop it.**
+**The enemy isn't on the internet. The enemy IS the internet. And there is no off switch.**
