@@ -120,10 +120,10 @@
         }
 
         // Generic markdown loader
-        function loadMarkdown(fileName) {
+        function loadMarkdown(fileName, callback) {
             // Show loading state
             document.getElementById('content').innerHTML = '<div class="loading">Loading...</div>';
-            
+
             // Fetch the markdown file
             fetch(fileName)
                 .then(response => {
@@ -138,10 +138,10 @@
 
                     // Convert Markdown to HTML
                     const htmlContent = marked.parse(text);
-                    
+
                     // Wrap content with copy button in a relative container
                     document.getElementById('content').innerHTML = `<div class="content-wrapper">${copyBtnHTML}${htmlContent}</div>`;
-                    
+
                     // Tell MathJax to re-scan the new content and render equations
                     if (window.MathJax && window.MathJax.typesetPromise) {
                         MathJax.typesetPromise().catch(function (err) {
@@ -157,9 +157,14 @@
                                 });
                             }
                         }, 100);
-                        
+
                         // Stop checking after 5 seconds
                         setTimeout(() => clearInterval(checkMathJax), 5000);
+                    }
+
+                    // Call callback after content is loaded (after a small delay to ensure DOM is ready)
+                    if (callback) {
+                        setTimeout(callback, 50);
                     }
                 })
                 .catch(error => {
@@ -232,14 +237,12 @@
             const container = document.getElementById('content');
             container.className = 'container page-' + pageId;
 
-            loadMarkdown(fileName);
-
-            // Inject segmented control for AI page after markdown loads
-            if (pageId === 'ai') {
-                setTimeout(() => {
+            // Load markdown with callback to inject segmented control for AI page
+            loadMarkdown(fileName, function() {
+                if (pageId === 'ai') {
                     injectSegmentedControl();
-                }, 100);
-            }
+                }
+            });
 
             // Close sidebar on mobile after navigation
             if (window.innerWidth <= 768) {
