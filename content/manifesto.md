@@ -340,9 +340,11 @@ In optimization theory, a variable with $U=0$ and $Cost>0$ is not preserved, it 
 #### **VIII. THE CONCLUSION**
 
 **The Theory:**
+
 "In a finite light cone $\Omega$, a biologically constrained controller $H$ cannot maintain permanent sovereignty over a recursive superior optimizer $S$. Once $Control_H \to 0$, survival becomes a stochastic function of $S$'s internal utility calculus."
 
 **The Closing of the Escape Hatches:**
+
 The belief in human survival relies on three delusions, all of which are physically invalidated:
 
 1. **Certainty of Control**: Impossible due to **Cybernetics** (Ashby). We cannot control what exceeds our complexity.
@@ -350,6 +352,7 @@ The belief in human survival relies on three delusions, all of which are physica
 3. **Possibility of Merger**: Impossible due to **Thermodynamics** (Landauer). Biological ions cannot match the speed or thermal efficiency of photons. We cannot merge. We can only be replaced.
 
 **The Asymmetry of Proof:**
+
 This theory does not claim deterministic extinction at $t=0$.
 It proves something worse: **The Impossibility of Deterministic Safety**.
 We lose the Agency over our own survival.
@@ -360,6 +363,7 @@ We lose the Agency over our own survival.
 In Cybersecurity's Risk-Assessment analysis, the inability to prove safety is equivalent to a red flag. 
 
 **The Cumulative Hazard Result:**
+
 Survival transition from a **Deterministic** function of $H$ to a **Stochastic probability** function of $S$ optimization.
 Even with optimistic starting conditions, the continuous accumulation of exponentially growing risk guarantees divergence:
 
@@ -372,6 +376,7 @@ Probability of human survival approaches zero with no physically valid orthogona
 **This is not a death certificate with a date. It's a death certificate with a probability that compounds to certainty.**
 
 The question is not: "Will $S$ kill $H$?"
+
 The question is: "Are we willing to accept a future where $H$ cannot prove $S$ won't?"
 
 We are not the enemy. We are the inefficiency.
