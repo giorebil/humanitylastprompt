@@ -271,9 +271,8 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-    font-size: 2.5rem;
-    border-bottom: none; /* Clean look for main title */
-    text-align: center; /* Only main title centered */
+    font-size: 1.5rem;
+    text-align: left;
 }
 
 /* EMPHASIS (Bold text) */
@@ -362,7 +361,7 @@ p {
 
 .page-thoughts h1,
 .page-analogies h1 {
-    font-size: 2.2rem;
+    font-size: 1.5rem;
 }
 
 .page-thoughts h2,
@@ -377,7 +376,7 @@ p {
 }
 
 .page-sources h1 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin-bottom: 15px;
 }
 
