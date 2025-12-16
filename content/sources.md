@@ -64,7 +64,7 @@ The proofs that rational agents will replace us.
 
 **The Fact:** Nobel Prize economist Wassily Leontief famously compared human labor to horse labor, noting that better technology (combustion engine) didn't help horses find "better jobs" it simply eliminated the need for them.
 
-![Horse Population Decline](onlythehorses.png)
+![Horse Population Decline](../assets/images/content/onlythehorses.png)
 
 ### The OODA Loop (Reaction Time)
 **Source:** (https://www.coljohnboyd.com/static/documents/1986-12__Boyd_John_R__Patterns_of_Conflict__PPT-PDF.pdf) 
@@ -74,4 +74,4 @@ The proofs that rational agents will replace us.
 ### Chess: The First Domain to Fall
 Progress in chess was steady. Equivalence to humans was sudden.
 
-![AI vs Human Chess](nevercaredthough.png)
+![AI vs Human Chess](../assets/images/content/nevercaredthough.png)

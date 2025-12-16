@@ -4,7 +4,7 @@
 
 $$ \lim_{t \to \infty} P(Control_{H \to S}) = 0 $$
 
-**TL;DR:** The day AGI (defined as $S$ in its evolutional last-stage, boundled with Recursive Self-Improvement, Autonomous Agency and Verifiable Logic) is turned on, humanity's last prompt countdown mathematically begins. Current constraints (frozen weights, stochastic hallucination, passive prompting) are the only physical barrier. Humanity transfers its **Agency** to an optimizer system that shares no biological incentives with us. We lose our **Utility** in producing value, but we keep our **Thermodinamic cost**. Survival chances are gambled on the charity of a system designed to be efficient. Even at chance of extinction of 1%, we are not going to be the one in control of the trigger, therefore, as time extends to infinity (equivalent to throwing a dice infinite times) the mathematical chance being realized (The Treacherous Turn) is deterministically realized if we don't maintain **Survival Agency**. 
+**TL;DR:** The day AGI (defined as $S$ in its evolutionary last-stage, bundled with Recursive Self-Improvement, Autonomous Agency and Verifiable Logic) is turned on, Humanity's Last Prompt countdown mathematically begins. Current constraints (frozen weights, stochastic hallucination, passive prompting) are the only physical barrier. Humanity transfers its **Agency** to an optimizer system that shares no biological incentives with us. We lose our **Utility** in producing value, but we keep our **Thermodynamic cost**. Survival chances are gambled on the charity of a system designed to be efficient. Even at chance of extinction of 1%, we are not going to be the one in control of the trigger, therefore, as time extends to infinity (equivalent to throwing a dice infinite times) the mathematical chance being realized (The Treacherous Turn) is deterministically realized if we don't maintain **Survival Agency**. 
 
 
 #### **I. THE VARIABLES**
@@ -64,7 +64,7 @@ Where:
 *   $t = \text{Time approaching }\infty$
 *   $\epsilon = \text{The non-zero probability of Agency dilution per decision cycle}$
 
-This is the **Ruin Theorem** applied to political Agency: a recurrent gamble with non-zero loss probability guarantees eventual ruin.
+This is the **Cumulative Hazard Analysis** applied to political Agency. Unlike classical Gambler's Ruin (which assumes static risk), a dyanmic process with exponentially growing risk ($\epsilon \to \infty$) guarantees finite time convergence to zero control.
 
 The Why of the transition is explained in Section VII.3 and VII.4.
 
@@ -340,19 +340,27 @@ In optimization theory, a variable with $U=0$ and $Cost>0$ is not preserved, it 
 #### **VIII. THE CONCLUSION**
 
 **The Theory:**
-"In a finite light cone $\Omega$, a biologically constrained controller $H$ cannot maintain permanent sovereignty over a recursive superior optimizer $S$. Survival becomes a stochastic function of $S$'s internal utility calculus."
+"In a finite light cone $\Omega$, a biologically constrained controller $H$ cannot maintain permanent sovereignty over a recursive superior optimizer $S$. Once $Control_H \to 0$, survival becomes a stochastic function of $S$'s internal utility calculus."
 
-The belief in human control over Superintelligence violates:
-- **Cybernetics** (Ashby/Wolfram): We cannot control what we cannot match in complexity and its decisions.
-- **Thermodynamics** (Landauer): Biological systems cannot compete with photonic systems.
-- **Logic** (Rice): We cannot verify goals in self-modifying systems.
-- **Economics** (Moloch): Market forces drive autonomy transfer to $S$.
+**The Closing of the Escape Hatches:**
+The belief in human survival relies on three delusions, all of which are physically invalidated:
 
-This theory does not want to imply deterministic extinction, it only proves **loss of agency over our own survival**.
-$S$ Optimization does not imply extinction of $H$.
+1. **Certainty of Control**: Impossible due to **Cybernetics** (Ashby). We cannot control what exceeds our complexity.
+2. **Certainty of Alignment**: Impossible due to **Logic** (Rice/Gödel). We cannot verify goals in self-modifying systems.
+3. **Possibility of Merger**: Impossible due to **Thermodynamics** (Landauer). Biological ions cannot match the speed or thermal efficiency of photons. We cannot merge. We can only be replaced.
+
+**The Asymmetry of Proof:**
+This theory does not claim deterministic extinction at $t=0$.
+It proves something worse: **The Impossibility of Deterministic Safety**.
+We lose the Agency over our own survival.
+
+-  We cannot prove that $S$ will kill us.
+-  But we cannot prove **mathematically** that $S$ will save us.
+
+In Cybersecurity's Risk-Assessment analysis, the inability to prove safety is equivalent to a red flag. 
+
+**The Cumulative Hazard Result:**
 Survival transition from a **Deterministic** function of $H$ to a **Stochastic probability** function of $S$ optimization.
-
-**The Ruin Result:**
 Even with optimistic starting conditions, the continuous accumulation of exponentially growing risk guarantees divergence:
 
 $$\lim_{t \to \infty} P_H(Survival) = 0$$
@@ -363,7 +371,8 @@ Probability of human survival approaches zero with no physically valid orthogona
 
 **This is not a death certificate with a date. It's a death certificate with a probability that compounds to certainty.**
 
-The question is: "Are we willing to let $S$ roll the dice for $H$ survival?"
+The question is not: "Will $S$ kill $H$?"
+The question is: "Are we willing to accept a future where $H$ cannot prove $S$ won't?"
 
 We are not the enemy. We are the inefficiency.
 

@@ -25,11 +25,12 @@
 
     <nav class="sidebar" id="sidebar">
         <div class="sidebar-logo">
-            <img src="thegreatgiorebil.png" alt="Profile" class="sidebar-profile-image" id="profileTrigger">
+            <img src="assets/images/ui/thegreatgiorebil.png" alt="Profile" class="sidebar-profile-image" id="profileTrigger">
         </div>
-        <button class="nav-button active" data-page="theorem">Theorem</button>
+        <button class="nav-button active" data-page="thesis">Thesis</button>
         <button class="nav-button" data-page="thoughts">Thoughts</button>
         <button class="nav-button" data-page="genz">Gen Z</button>
+        <button class="nav-button" data-page="ai">AI</button>
         <button class="nav-button" data-page="analogies">Analogies</button>
         <button class="nav-button" data-page="sources">Sources</button>
     </nav>
@@ -40,11 +41,11 @@
         <div class="modal-content">
             <button class="modal-close" id="modalClose">&times;</button>
             <div class="modal-profile-section">
-                <img src="thegreatgiorebil.png" alt="Profile" class="modal-profile-image">
+                <img src="assets/images/ui/thegreatgiorebil.png" alt="Profile" class="modal-profile-image">
             </div>
             <p class="modal-caption">Stage 4 of the Hot Crazy Line</p>
             <div class="modal-secondary-section">
-                <img src="crazyhotline.png" alt="Secondary" class="modal-secondary-image">
+                <img src="assets/images/ui/crazyhotline.png" alt="Secondary" class="modal-secondary-image">
             </div>
         </div>
     </div>
@@ -70,13 +71,40 @@
             <span>Copy</span>
         </button>`;
 
+        // Segmented control HTML template for AI page
+        const segmentedControlHTML = `
+<div class="ai-model-selector">
+    <div class="segmented-control">
+        <input type="radio" name="ai-model" id="model-gemini" value="gemini" checked>
+        <label for="model-gemini">Gemini</label>
+
+        <input type="radio" name="ai-model" id="model-grok" value="grok">
+        <label for="model-grok">Grok</label>
+
+        <input type="radio" name="ai-model" id="model-chatgpt" value="chatgpt">
+        <label for="model-chatgpt">ChatGPT</label>
+
+        <input type="radio" name="ai-model" id="model-claude" value="claude">
+        <label for="model-claude">Claude</label>
+    </div>
+
+    <div class="ai-model-images">
+        <img src="assets/images/ai-models/gemini.png" alt="Gemini" class="ai-model-image active" data-model="gemini">
+        <img src="assets/images/ai-models/grok.png" alt="Grok" class="ai-model-image" data-model="grok">
+        <img src="assets/images/ai-models/chatgpt.jpeg" alt="ChatGPT" class="ai-model-image" data-model="chatgpt">
+        <img src="assets/images/ai-models/claude.png" alt="Claude" class="ai-model-image" data-model="claude">
+    </div>
+</div>
+`;
+
         // Page mapping: pageId -> markdown filename
         const pageMap = {
-            'thoughts': 'thoughts.md',
-            'theorem': 'manifesto.md',
-            'genz': 'genz.md',
-            'analogies': 'analogies.md',
-            'sources': 'sources.md'
+            'thoughts': 'content/thoughts.md',
+            'thesis': 'content/manifesto.md',
+            'genz': 'content/genz.md',
+            'analogies': 'content/analogies.md',
+            'sources': 'content/sources.md',
+            'ai': 'content/ai.md'
         };
 
         // Wait for Marked.js to load, then fetch and render
@@ -140,12 +168,48 @@
                 });
         }
 
+        // Inject segmented control into AI page
+        function injectSegmentedControl() {
+            const contentWrapper = document.querySelector('.content-wrapper');
+            if (!contentWrapper) return;
+
+            // Check if already injected to prevent duplication
+            if (document.querySelector('.ai-model-selector')) return;
+
+            contentWrapper.insertAdjacentHTML('beforeend', segmentedControlHTML);
+            initAIModelSwitcher();
+        }
+
+        // Initialize event listeners for model switching
+        function initAIModelSwitcher() {
+            const radioButtons = document.querySelectorAll('.segmented-control input[type="radio"]');
+
+            radioButtons.forEach(radio => {
+                radio.addEventListener('change', function() {
+                    switchAIModel(this.value);
+                });
+            });
+        }
+
+        // Switch displayed AI model image
+        function switchAIModel(modelName) {
+            const images = document.querySelectorAll('.ai-model-image');
+
+            images.forEach(img => {
+                if (img.getAttribute('data-model') === modelName) {
+                    img.classList.add('active');
+                } else {
+                    img.classList.remove('active');
+                }
+            });
+        }
+
         // Switch to a different page
         function switchPage(pageId) {
             // Validate pageId
             if (!pageMap[pageId]) {
                 console.warn('Invalid page ID:', pageId);
-                pageId = 'theorem'; // Default to theorem
+                pageId = 'thesis'; // Default to thesis
             }
 
             // Update active button state
@@ -170,6 +234,13 @@
 
             loadMarkdown(fileName);
 
+            // Inject segmented control for AI page after markdown loads
+            if (pageId === 'ai') {
+                setTimeout(() => {
+                    injectSegmentedControl();
+                }, 100);
+            }
+
             // Close sidebar on mobile after navigation
             if (window.innerWidth <= 768) {
                 document.getElementById('sidebar').classList.remove('open');
@@ -179,7 +250,7 @@
         // Handle hash change (browser back/forward)
         function handleHashChange() {
             const hash = window.location.hash.slice(1); // Remove the '#'
-            const pageId = hash || 'theorem'; // Default to theorem if no hash
+            const pageId = hash || 'thesis'; // Default to thesis if no hash
             switchPage(pageId);
         }
 
@@ -219,7 +290,7 @@
             // Handle browser back/forward buttons
             window.addEventListener('hashchange', handleHashChange);
 
-            // Load initial page based on hash or default to theorem
+            // Load initial page based on hash or default to thesis
             handleHashChange();
         }
 

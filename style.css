@@ -480,3 +480,131 @@ p {
         max-width: 800px;
     }
 }
+
+/* AI MODEL SELECTOR & SEGMENTED CONTROL */
+
+/* Hide copy button on AI page */
+.page-ai .copy-markdown-btn {
+    display: none;
+}
+
+/* Reduce AI page text size */
+.page-ai {
+    font-size: 0.875rem;
+}
+
+/* Reduce AI page header size and adjust spacing */
+.page-ai h1 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* AI Model Selector Container */
+.ai-model-selector {
+    margin: 40px 0;
+    padding: 30px;
+    background-color: #0f0f0f;
+    border: 1px solid #333;
+    border-radius: 8px;
+}
+
+/* Segmented Control */
+.segmented-control {
+    display: flex;
+    gap: 0;
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 6px;
+    padding: 4px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+/* Hide radio inputs */
+.segmented-control input[type="radio"] {
+    display: none;
+}
+
+/* Segment labels */
+.segmented-control label {
+    flex: 1;
+    text-align: center;
+    padding: 12px 20px;
+    font-family: 'Menlo', 'Consolas', 'Monaco', 'Courier New', monospace;
+    font-size: 0.875rem;
+    color: #c0c0c0;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-radius: 4px;
+    user-select: none;
+}
+
+/* Hover state */
+.segmented-control label:hover {
+    color: #ffffff;
+    background-color: rgba(255, 85, 85, 0.1);
+}
+
+/* Active (selected) state */
+.segmented-control input[type="radio"]:checked + label {
+    background-color: #ff5555;
+    color: #121212;
+    font-weight: 600;
+}
+
+/* Image container */
+.ai-model-images {
+    position: relative;
+    width: 100%;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Individual images */
+.ai-model-image {
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    border-radius: 8px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Active image */
+.ai-model-image.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Mobile responsive for segmented control */
+@media (max-width: 768px) {
+    .segmented-control label {
+        padding: 10px 12px;
+        font-size: 0.75rem;
+    }
+
+    .ai-model-images {
+        height: 450px;
+    }
+}
+
+@media (max-width: 480px) {
+    .segmented-control {
+        flex-direction: column;
+    }
+
+    .segmented-control label {
+        border-radius: 4px;
+    }
+}
