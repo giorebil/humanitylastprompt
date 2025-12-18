@@ -64,7 +64,7 @@ Where:
 *   $t = \text{Time approaching }\infty$
 *   $\epsilon = \text{The non-zero probability of Agency dilution per decision cycle}$
 
-This is the **Cumulative Hazard Analysis** applied to political Agency. Unlike classical Gambler's Ruin (which assumes static risk), a dyanmic process with exponentially growing risk ($\epsilon \to \infty$) guarantees finite time convergence to zero control.
+This is the **Cumulative Hazard Analysis** applied to political Agency. Unlike classical Gambler's Ruin (which assumes static risk), a dynamic process with exponentially growing risk ($\epsilon \to \infty$) guarantees finite time convergence to zero control.
 
 The Why of the transition is explained in Section VII.3 and VII.4.
 
@@ -79,7 +79,7 @@ Human cognition is strictly bounded by the electrochemical limits of the ion cha
 $$v_{bio} \approx 100 \text{ m/s (Ions)} \quad vs \quad v_{sil} \approx 3 \times 10^8 \text{ m/s (Photons)}$$
 
 *   *The Processing Deficit:* The speed of light is the hard limit for $S$. The speed of diffusion is the hard limit for $H$. **8 billion humans thinking in parallel will never match the throughput of a single photonic processor**. You cannot overcome a fundamental **Latency** deficit with **Parallelism**.
-*   *The Hardware Limit:* You cannot run **GTA6 on a PlayStation 1**. $H$ cannot react, perceive or merge due to unbridgeable hardware latency with $S$. It does not matter how much you optimize the code; the hardware lacks the polygons, memory, and clock speed to execute the reality.
+*   *The Hardware Limit:* You cannot run **GTA VI on a PlayStation 1**. $H$ cannot react, perceive or merge due to unbridgeable hardware latency with $S$. It does not matter how much you optimize the code; the hardware lacks the polygons, memory, and clock speed to execute the reality.
 *   *Thermodynamic Efficiency:* Landauer's Principle dictates that processing information generates heat. $H$ Biological intelligence requires a thermal computational window (37°C). Therefore $S$ can process more thoughts than $H$ is physically capable of.
 *   *Implication:* $H$ cannot "merge" with $S$ through a BCI. We can't insert intelligence in our brain bypassing the "Conscious Thinking" limits, leveraging "Unconscious Thinking" writing would imply not being able to understand the reasoning behind our actions. The "Ship of Theseus" applies: replacing the substrate to solve the thermal limit results in the death of the biological observer.
 
